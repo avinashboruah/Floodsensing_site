@@ -3,7 +3,6 @@ import MobileNav from './MobileNav';
 
 const navLinks = [
   { label: 'Platform', href: '#platform' },
-  { label: 'Case Study', href: '#case-study' },
   { label: 'Contact', href: '#contact' },
 ];
 

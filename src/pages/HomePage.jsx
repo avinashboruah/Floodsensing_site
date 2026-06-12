@@ -5,7 +5,6 @@ import IntelStrip from '../components/IntelStrip';
 import HeroSection from '../sections/HeroSection';
 import ProblemSection from '../sections/ProblemSection';
 import OfferSection from '../sections/OfferSection';
-import TexasCaseStudySection from '../sections/TexasCaseStudySection';
 import VideoSection from '../sections/VideoSection';
 import CTASection from '../sections/CTASection';
 
@@ -33,7 +32,6 @@ export default function HomePage() {
         <ProblemSection />
         <IntelStrip />
         <OfferSection />
-        <TexasCaseStudySection />
         <VideoSection />
         <CTASection />
       </main>

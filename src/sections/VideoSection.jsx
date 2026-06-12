@@ -41,10 +41,10 @@ export default function VideoSection() {
               color: '#fff',
             }}
           >
-            Watch how our AI-powered platform predicts and prevents flood events before they happen.
+            Watch how we can utilize the river forecast and do impact based assessment before it can happen
           </h2>
           <p className="text-[15px] leading-[1.65]" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            From raw satellite data to executive-ready risk alerts — the entire intelligence pipeline, live.
+            From raw satelite data to quick decision making ..We provide the entire solution.
           </p>
         </div>
 

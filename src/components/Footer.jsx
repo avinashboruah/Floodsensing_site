@@ -2,7 +2,6 @@ const footerLinks = {
   Platform: [
     { label: 'What We Offer', href: '#platform' },
     { label: 'Flood Risk Intelligence', href: '#why-act' },
-    { label: 'Case Study', href: '#case-study' },
     { label: 'Assessment Access', href: '#contact' },
   ],
   Solutions: [
@@ -12,7 +11,6 @@ const footerLinks = {
     { label: 'Agriculture', href: '#platform' },
   ],
   Company: [
-    { label: 'Research', href: '#case-study' },
     { label: 'Contact', href: '#contact' },
   ],
 };
