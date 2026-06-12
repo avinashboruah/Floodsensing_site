@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* ── Design Tokens (Tailwind v4 @theme) ──────────────────────────────────── */
+@theme {
+  --color-alabaster: #D8DBE2;
+  --color-powder: #A9BCD0;
+  --color-pacific: #58A4B0;
+  --color-pacific-dark: #4a8f9a;
+  --color-charcoal: #373F51;
+  --color-carbon: #1B1B1E;
+  --color-alert-high: #E8593C;
+  --color-alert-amber: #EF9F27;
+
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+/* ── Global Base ─────────────────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: #F2F4F7;
+    color: var(--color-carbon);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-pacific);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ── Reusable Component Classes ─────────────────────────────────────────── */
+@layer components {
+  .skip-link {
+    position: absolute;
+    top: -7rem;
+    left: 1rem;
+    z-index: 9999;
+    padding: 0.625rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: top 0.2s;
+    background: var(--color-pacific);
+    color: #fff;
+    font-family: var(--font-sans);
+  }
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-pacific);
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  .section-title {
+    font-family: var(--font-serif);
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    color: var(--color-carbon);
+    margin-bottom: 20px;
+  }
+
+  .section-sub {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(27, 27, 30, 0.6);
+    max-width: 580px;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Custom Keyframes ────────────────────────────────────────────────────── */
+@keyframes gridDrift {
+  from { background-position: 0 0; }
+  to   { background-position: 60px 60px; }
+}
+
+@keyframes scrollStrip {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes ripple {
+  0%   { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(-20px, 20px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(15px, -15px); }
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
