@@ -60,7 +60,7 @@ export default function VideoSection() {
                   : 'bg-white/10 text-white hover:bg-white/20 border border-white/10'
               }`}
             >
-              NWM Simulation
+              Impact based forecasting
             </button>
             <button
               onClick={() => setActiveVideo('hec-ras')}
@@ -70,7 +70,7 @@ export default function VideoSection() {
                   : 'bg-white/10 text-white hover:bg-white/20 border border-white/10'
               }`}
             >
-              Flood Forecasting
+              Flood Inundation Mapping in Jiabhoroli River
             </button>
           </div>
 
