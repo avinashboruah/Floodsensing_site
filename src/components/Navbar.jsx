@@ -3,6 +3,7 @@ import MobileNav from './MobileNav';
 
 const navLinks = [
   { label: 'Platform', href: '#platform' },
+  { label: 'People', href: '#people' },
   { label: 'Contact', href: '#contact' },
 ];
 

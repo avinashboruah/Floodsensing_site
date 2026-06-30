@@ -11,6 +11,7 @@ const footerLinks = {
     { label: 'Agriculture', href: '#platform' },
   ],
   Company: [
+    { label: 'Our People', href: '#people' },
     { label: 'Contact', href: '#contact' },
   ],
 };

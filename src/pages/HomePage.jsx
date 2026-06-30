@@ -6,6 +6,7 @@ import HeroSection from '../sections/HeroSection';
 import ProblemSection from '../sections/ProblemSection';
 import OfferSection from '../sections/OfferSection';
 import VideoSection from '../sections/VideoSection';
+import PeopleSection from '../sections/PeopleSection';
 import CTASection from '../sections/CTASection';
 
 export default function HomePage() {
@@ -33,6 +34,7 @@ export default function HomePage() {
         <IntelStrip />
         <OfferSection />
         <VideoSection />
+        <PeopleSection />
         <CTASection />
       </main>
 
