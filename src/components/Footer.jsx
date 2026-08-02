@@ -1,18 +1,19 @@
 const footerLinks = {
   Platform: [
-    { label: 'What We Offer', href: '#platform' },
-    { label: 'Flood Risk Intelligence', href: '#why-act' },
-    { label: 'Assessment Access', href: '#contact' },
+    { label: 'What We Offer', href: '/#platform' },
+    { label: 'Flood Risk Intelligence', href: '/#why-act' },
+    { label: 'Assessment Access', href: '/#contact' },
   ],
   Solutions: [
-    { label: 'Government & Disaster', href: '#platform' },
-    { label: 'Urban Resilience', href: '#platform' },
-    { label: 'Dam & Reservoir', href: '#platform' },
-    { label: 'Agriculture', href: '#platform' },
+    { label: 'Government & Disaster', href: '/#platform' },
+    { label: 'Urban Resilience', href: '/#platform' },
+    { label: 'Dam & Reservoir', href: '/#platform' },
+    { label: 'Agriculture', href: '/#platform' },
   ],
   Company: [
-    { label: 'Our People', href: '#people' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Our People', href: '/#people' },
+    { label: 'Insights', href: '/insights/assam-flood-2026' },
+    { label: 'Contact', href: '/#contact' },
   ],
 };
 

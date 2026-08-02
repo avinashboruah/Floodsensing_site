@@ -3,21 +3,21 @@ import FadeIn from '../components/ui/FadeIn';
 const caseStudyImages = [
   {
     id: 'inundation',
-    src: '/FLOOD%20INUNDATION%20MAPS.png',
+    src: '/flood-inundation-maps.jpg',
     alt: 'Flood inundation maps showing South Fork Guadalupe River progression from 3 A.M. to 5 A.M.',
     className: 'md:col-span-2',
     aspectRatio: '16/9',
   },
   {
     id: 'forecast',
-    src: '/HRRR%20VS%20MRMS.png',
+    src: '/hrrr-vs-mrms.jpg',
     alt: 'HRRR versus MRMS forecast comparison for the Texas flash flood case study.',
     className: '',
     aspectRatio: '4/3',
   },
   {
     id: 'streamflow',
-    src: '/STREAMFLOW%20ANALYSIS.png',
+    src: '/streamflow-analysis.jpg',
     alt: 'Streamflow analysis for the Texas flash flood case study.',
     className: '',
     aspectRatio: '4/3',

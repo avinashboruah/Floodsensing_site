@@ -1,5 +1,22 @@
 import FadeIn from '../components/ui/FadeIn';
-import { coreTeam } from '../data/team';
+import { coreTeam, advisoryBoard, internationalCollaborators } from '../data/team';
+
+function AdvisorCard({ member, delay }) {
+  return (
+    <FadeIn delay={delay}>
+      <div
+        className="bg-white rounded-2xl px-6 py-5 border border-charcoal/10 hover:border-pacific/40 hover:shadow-lg transition-all duration-300 h-full flex flex-col justify-center"
+        style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}
+      >
+        <h4 className="font-serif text-base font-bold text-carbon">{member.name}</h4>
+        <span className="text-xs mt-1" style={{ color: '#4a8f9a' }}>
+          {member.role ? `${member.role}, ` : ''}
+          {member.affiliation}
+        </span>
+      </div>
+    </FadeIn>
+  );
+}
 
 export default function PeopleSection() {
   return (
@@ -67,6 +84,40 @@ export default function PeopleSection() {
             </FadeIn>
           ))}
         </div>
+
+        {/* Advisory Board */}
+        {advisoryBoard.length > 0 && (
+          <div className="mt-20">
+            <FadeIn>
+              <span className="section-label text-center block">Guidance</span>
+              <h3 className="font-serif text-2xl font-bold text-carbon text-center mb-10">
+                Advisory Board
+              </h3>
+            </FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[800px] mx-auto">
+              {advisoryBoard.map((member, i) => (
+                <AdvisorCard key={member.id} member={member} delay={i * 50} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* International Collaborators */}
+        {internationalCollaborators.length > 0 && (
+          <div className="mt-16">
+            <FadeIn>
+              <span className="section-label text-center block">Global Network</span>
+              <h3 className="font-serif text-2xl font-bold text-carbon text-center mb-10">
+                International Collaborators
+              </h3>
+            </FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {internationalCollaborators.map((member, i) => (
+                <AdvisorCard key={member.id} member={member} delay={i * 50} />
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

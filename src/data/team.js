@@ -69,15 +69,43 @@ export const coreTeam = [
 ];
 
 export const advisoryBoard = [
-  // This is empty for now as the client is working on it.
-  // It is structured identically to coreTeam so that when they provide the details,
-  // we can simply insert objects here.
-  /*
   {
-    id: 'advisor-1',
-    name: 'Advisor Name',
-    credentials: 'PhD / Affiliation',
-    expertise: ['Expertise Area 1', 'Expertise Area 2'],
-  }
-  */
+    id: 'arup-kumar-sarma',
+    name: 'Dr. Arup Kumar Sarma',
+    role: 'Professor',
+    affiliation: 'IIT Guwahati',
+  },
+];
+
+export const internationalCollaborators = [
+  {
+    id: 'sagy-cohen',
+    name: 'Dr. Sagy Cohen',
+    role: 'Professor',
+    affiliation: 'University of Alabama',
+  },
+  {
+    id: 'mohamed-abdelkader',
+    name: 'Dr. Mohamed Abdelkader',
+    role: '',
+    affiliation: 'University of Iowa',
+  },
+  {
+    id: 'dinuke-munasinghe',
+    name: 'Dr. Dinuke Munasinghe',
+    role: 'Research Scientist',
+    affiliation: 'University of Alabama',
+  },
+  {
+    id: 'yixian-chen',
+    name: 'Dr. Yixian Chen',
+    role: 'Research Scientist',
+    affiliation: 'University of Alabama',
+  },
+  {
+    id: 'dan-tian',
+    name: 'Dr. Dan Tian',
+    role: 'Research Scientist',
+    affiliation: 'University of Alabama',
+  },
 ];

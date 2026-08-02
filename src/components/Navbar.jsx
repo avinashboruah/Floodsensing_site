@@ -2,9 +2,10 @@ import { useMobileNav } from '../hooks/useMobileNav';
 import MobileNav from './MobileNav';
 
 const navLinks = [
-  { label: 'Platform', href: '#platform' },
-  { label: 'People', href: '#people' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Platform', href: '/#platform' },
+  { label: 'Insights', href: '/insights/assam-flood-2026' },
+  { label: 'People', href: '/#people' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
